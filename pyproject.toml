@@ -1,0 +1,18 @@
+[project]
+name = "learn-verl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.0.0",  # Core PyTorch dependency
+    "datasets>=3.6.0",
+    "msgspec>=0.15.0",
+    "vllm>=0.8.5",
+    "ninja>=1.11.1",
+    # flash-attn is installed separately via the verl setup process
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
