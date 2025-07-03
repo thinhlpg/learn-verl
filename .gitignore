@@ -2,7 +2,11 @@
 __pycache__/
 *.py[codz]
 *$py.class
-apex
+apex/
+.vscode/
+outputs/
+wandb/
+checkpoints/
 
 # C extensions
 *.so
