@@ -5,12 +5,12 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "torch>=2.0.0",  # Add torch as a dependency before flash-attn
+    "torch>=2.0.0",  # Core PyTorch dependency
     "datasets>=3.6.0",
     "msgspec>=0.15.0",
     "vllm>=0.8.5",
     "ninja>=1.11.1",
-    # Remove flash-attn from here
+    # flash-attn is installed separately via the verl setup process
 ]
 
 [build-system]

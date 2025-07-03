@@ -1,5 +1,24 @@
 #!/bin/bash
 
+# PPO Training Script for GSM8K Dataset
+# 
+# This script trains a Qwen2.5-0.5B model using PPO (Proximal Policy Optimization) 
+# on the GSM8K mathematical reasoning dataset.
+#
+# Prerequisites:
+# - CUDA >= 12.4 and cuDNN >= 9.8.0
+# - verl submodule initialized and installed
+# - GSM8K dataset available at $HOME/data/gsm8k/
+#
+# Usage:
+#   ./train_ppo_gsm8k.sh
+#
+# Environment Variables (can be customized):
+#   PROJECT_NAME: WandB project name (default: gsm8k-training)
+#   RUN_NAME: WandB run name (default: qwen-2.5-0.5b-low-mem)
+#   WANDB_ENTITY: WandB entity name (default: thinhlpg)
+#   CUDA_VISIBLE_DEVICES: GPU to use (default: 0)
+
 # Set environment variables
 export HYDRA_FULL_ERROR=1
 
